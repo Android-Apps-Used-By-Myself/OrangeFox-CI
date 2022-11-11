@@ -36,6 +36,7 @@ fi
 bash orangefox_sync.sh --branch $SYNC_BRANCH --path $SYNC_PATH || { echo "ERROR: Failed to Sync OrangeFox Sources!" && exit 1; }
 
 # Change to the Source Directory
+git clone https://github.com/TeamWin/android_device_qcom_common $SYNC_PATH/device/qcom/common
 cd $SYNC_PATH
 
 # Clone the theme if not already present

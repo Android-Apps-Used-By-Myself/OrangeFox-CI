@@ -2,9 +2,9 @@
 
 # Device
 export FOX_BRANCH="fox_9.0"
-export DT_LINK="https://gitlab.com/OrangeFox/device/beryllium.git -b fox_9.0"
+export DT_LINK="https://github.com/TeamWin/android_device_xiaomi_natrium.git -b android-7.1"
 
-export DEVICE="beryllium"
+export DEVICE="natrium"
 export OEM="xiaomi"
 
 # Build Target
