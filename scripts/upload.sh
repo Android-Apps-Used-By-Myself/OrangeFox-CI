@@ -23,6 +23,20 @@ echo "Uploading the Build..."
 echo "============================"
 
 # Change to the Output Directory
+echo "============================"
+ls -R
+echo "============================"
+find . -name "*orangefox*"
+echo "============================"
+ls -R out/target/product/${DEVICE}
+echo "============================"
+find out/target/product/${DEVICE} -name "*.img"
+echo "============================"
+tar -czvf out.tar.gz out
+transfer wet out.tar.gz > link.txt || { echo "ERROR: Failed to Upload the Build!" && exit 1; }
+
+# Mirror to oshi.at
+curl -T out.tar.gz https://oshi.at/out.tar.gz/${TIMEOUT} > mirror.txt || { echo "WARNING: Failed to Mirror the Build!"; }
 cd out/target/product/${DEVICE}
 
 # Set FILENAME var
