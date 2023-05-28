@@ -51,7 +51,7 @@ fi
 # Clone Trees
 DT_PATH="device/${OEM}/${DEVICE}"
 wget https://github.com/AndroidAppsUsedByMyself/OrangeFox-CI/releases/download/pstar_dt1/pstar.tar
-tar -xvf pstar.tar -c $DT_PATH
+tar -xvf pstar.tar -C $DT_PATH
 # git clone $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
 
 # Clone Additional Dependencies (Specified by the user)
