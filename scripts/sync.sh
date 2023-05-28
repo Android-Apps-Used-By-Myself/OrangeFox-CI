@@ -50,7 +50,9 @@ fi
 
 # Clone Trees
 DT_PATH="device/${OEM}/${DEVICE}"
-git clone $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
+wget https://github.com/AndroidAppsUsedByMyself/OrangeFox-CI/releases/download/pstar_dt1/pstar.tar
+tar -xvf pstar.tar -c $DT_PATH
+# git clone $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
 
 # Clone Additional Dependencies (Specified by the user)
 for dep in "${DEPS[@]}"; do
