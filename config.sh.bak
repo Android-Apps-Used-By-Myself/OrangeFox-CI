@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export FOX_BRANCH="fox_12.1"
+export FOX_BRANCH="fox_11.0"
 export DT_LINK="https://github.com/TeamWin/android_device_xiaomi_gemini.git -b android-9.0"
 
 export DEVICE="gemini"
@@ -22,7 +22,7 @@ DEPS=(
 )
 
 # Extra Command
-export EXTRA_CMD="export OF_MAINTAINER=StarVase"
+export EXTRA_CMD="export OF_MAINTAINER=DataEraserC"
 
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
